@@ -13,10 +13,6 @@ const { pageTitle } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <style>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
       .skill {
         color: var(--skillColor);
         font-weight: var(--fontWeight);
@@ -28,7 +24,7 @@ const { pageTitle } = Astro.props;
 
   <body>
     <Header />
-    <h1>{pageTitle}</h1>
+    <h1 class="text-2xl font-bold text-blue-800">{pageTitle}</h1>
     <slot />
     <Footer />
     <script>
